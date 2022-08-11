@@ -1,0 +1,189 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.google.com/specimen/Outfit");
+@import url("https://fonts.google.com/specimen/Outfit");
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+h1 {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.google.com/specimen/Outfit");
+}
+.card {
+  width: 350px;
+  height: 560px;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 20px;
+}
+.card__image {
+  width: 90%;
+  height: 52%;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card__image img {
+  display: block;
+}
+.card__image .card__image--overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(178deg, 100%, 50%, 0.301);
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card__image .card__image--overlay img {
+  width: 22%;
+  height: 22%;
+}
+@media screen and (min-width: 1440px) {
+  .card__image .card__image--overlay {
+    top: -16px;
+  }
+}
+.card__image:hover .card__image--overlay {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.card__titre {
+  width: 90%;
+  margin: auto;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: 30px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  transition: 0.5s;
+}
+.card__titre:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.card__description {
+  width: 90%;
+  height: 75px;
+  margin: auto;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 2rem;
+  color: hsl(215deg, 51%, 70%);
+}
+.card .description {
+  width: 90%;
+  margin: auto;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215deg, 32%, 27%);
+}
+.card .description .description__money {
+  display: flex;
+}
+.card .description .description__money .money__icon {
+  width: 15px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+.card .description .description__money .money__balance {
+  color: hsl(178deg, 100%, 50%);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Outfit", sans-serif;
+}
+.card .description .description__date {
+  display: flex;
+}
+.card .description .description__date .date__icon {
+  width: 20px;
+  height: 20px;
+}
+.card .description .description__date .date__balance {
+  margin-left: 0.5rem;
+  color: hsl(215deg, 51%, 70%);
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+.card .creator {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  margin-top: 1rem;
+}
+.card .creator .creator__avatar {
+  margin-left: 5%;
+  margin-bottom: 1rem;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+.card .creator .creator__description {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(215deg, 51%, 70%);
+  margin-top: 6px;
+  margin-left: 16px;
+}
+.card .creator .creator__description .creator__description--name {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 13px;
+  transition: 0.5s;
+}
+.card .creator .creator__description .creator__description--name:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+  transition: 0.5s;
+}/*# sourceMappingURL=index.css.map */

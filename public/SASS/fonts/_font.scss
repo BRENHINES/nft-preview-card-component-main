@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('https://fonts.google.com/specimen/Outfit');
+}
+
+@import url('https://fonts.google.com/specimen/Outfit');
+
+$outfit: 'Outfit';
+$fall-back: sans-serif;

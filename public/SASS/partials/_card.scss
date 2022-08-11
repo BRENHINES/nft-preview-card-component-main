@@ -1,0 +1,165 @@
+.card{
+    width: 350px;
+    height: 560px;
+    background-color: $card-BG;
+    border-radius: 20px;
+
+    &__image{
+        width: 90%;
+        height: 52%;
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        img{
+            display: block;
+        }
+
+        .card__image--overlay{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $Cyan-hover;
+            color: $white;
+            opacity: 0;
+            transition: opacity .5s;
+
+            img{
+                width: 22%;
+                height:22%;
+            }
+
+            @include desktop {
+                top: -16px;
+            }
+        }
+
+    }
+
+    &__image:hover .card__image--overlay{
+        opacity: 1;
+        cursor: pointer;
+        transition: opacity .5s;
+    }
+    
+
+    &__titre{
+        width: 90%;
+        margin: auto;
+        color: $white;
+        margin-top: 30px;
+        font-family: $outfit, $fall-back;
+        font-size: size(paragraph);
+        transition: .5s;
+    }
+
+    &__titre:hover{
+        color: $Cyan;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    &__description{
+        width: 90%;
+        height: 75px;
+        margin: auto;
+        margin-top: .75rem;
+        margin-bottom: .5rem;
+        font-family: $outfit, $fall-back;
+        font-size: size(paragraph);
+        line-height: 2rem;
+        color: $Soft-blue;
+
+    }
+    .description{
+        width: 90%;
+        margin: auto;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $line;
+
+        .description__money{
+            display: flex;
+
+            .money__icon{
+                width: 15px;
+                height: 20px;
+                margin-right: .5rem;
+            }
+
+            .money__balance{
+                color: $Cyan;
+                font-size: size(paragraph);
+                font-weight: weight(high);
+                font-family: $outfit, $fall-back;
+            }
+
+        }
+
+        .description__date{
+            display: flex;
+
+            .date__icon{
+                width: 20px;
+                height: 20px;
+            }
+
+            .date__balance{
+                margin-left: .5rem;
+                color: $Soft-blue;
+                font-size: size(paragraph);
+                font-family: $outfit, $fall-back;
+                font-weight: weight(high);
+            }
+        }
+    }
+
+    .creator{
+
+        display: flex;
+        width: 90%;
+        height: 50px;
+        margin-top: 1rem;
+        
+
+        .creator__avatar{
+            margin-left: 5%;
+            margin-bottom: 1rem;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            border: 2px solid $white;
+            border-radius: 50%;
+        }
+
+        .creator__description{
+            font-size: size(paragraph);
+            font-family: $outfit, $fall-back;
+            color: $Soft-blue;
+            margin-top: 6px;
+            margin-left: 16px;
+
+            .creator__description--name{
+                font-size: size(paragraph);
+                font-family: $outfit, $fall-back;
+                color: $white;
+                margin-left: 13px;
+                transition: .5s;
+            }
+
+            .creator__description--name:hover{
+                color: $Cyan;
+                cursor: pointer;
+                transition: .5s;
+            }
+        }
+    }
+}
